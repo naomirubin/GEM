@@ -26,6 +26,11 @@ const firebaseConfig =
     : require("./firebase-staging-config.js")
 
 module.exports = {
+  siteMetadata: {
+    title: "Gem Applet",
+    description: `GEM applet and riddle.`,
+    author: `@naomirubin`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-google-analytics`,
