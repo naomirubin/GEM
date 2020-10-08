@@ -4,18 +4,15 @@ export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
       <head>
-        <title>Amstangram</title>
+        <title>GEMgrams</title>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no, viewport-fit=cover"
         />
-        <meta property="og:title" content="Amstangram" />
-        <meta
-          property="og:description"
-          content="The evergrowing tangrams collection."
-        />
+        <meta property="og:title" content="GEM Applet" />
+        <meta property="og:description" content="GEM Spplet." />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://amstangr.am/banner.png" />
         <meta property="og:url" content="https://amstangr.am" />

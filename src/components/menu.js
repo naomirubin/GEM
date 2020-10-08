@@ -49,26 +49,26 @@ const MenuItem = ({ action, icon, text }) => {
 }
 
 export const Menu = () => {
-  const { playlist, saveRequestId } = useContext(GalleryContext)
-  const { currentUser } = useContext(UserContext)
+  // const { playlist, saveRequestId } = useContext(GalleryContext)
+  // const { currentUser } = useContext(UserContext)
   const { playButton } = useContext(SoundContext)
   const intl = useIntl()
 
   const {
-    showLeaderboard,
+    // showLeaderboard,
     showGallery,
-    showLogin,
-    showProfile,
+    // showLogin,
+    // showProfile,
     showSettings,
   } = useContext(DialogContext)
 
   const [menuDialogDeferred, setMenuDialogDeferred] = useState()
 
-  useEffect(() => {
-    menuDialogDeferred && menuDialogDeferred.reject(DIALOG_CLOSED_REASON)
-  }, [playlist, saveRequestId])
+  // useEffect(() => {
+  //   menuDialogDeferred && menuDialogDeferred.reject(DIALOG_CLOSED_REASON)
+  // }, [playlist, saveRequestId])
 
-  const { requestSave } = useContext(GalleryContext)
+  // const { requestSave } = useContext(GalleryContext)
 
   const handleMenuClick = () => {
     playButton()
@@ -131,13 +131,13 @@ export const Menu = () => {
                   },
                 }}
               />
-              <Title>{intl.formatMessage({ id: "Amstangram" })}</Title>
+              <Title>{intl.formatMessage({ id: "GEMgrams" })}</Title>
             </View>
           }
           css={{ gap: 3, overflow: "initial" }}
         >
           <View>
-            {currentUser ? (
+            {/* {currentUser ? (
               <MenuItem
                 action={() => showProfile(currentUser.uid)}
                 icon={() => (
@@ -151,7 +151,7 @@ export const Menu = () => {
                 icon={FiUser}
                 text={intl.formatMessage({ id: "Log in" })}
               ></MenuItem>
-            )}
+            )} */}
 
             <MenuItem
               action={showGallery}
@@ -159,17 +159,17 @@ export const Menu = () => {
               text={intl.formatMessage({ id: "Tangram gallery" })}
             ></MenuItem>
 
-            <MenuItem
+            {/* <MenuItem
               action={requestSave}
               icon={FiSave}
               text={intl.formatMessage({ id: "Save tangram" })}
-            ></MenuItem>
+            ></MenuItem> */}
 
-            <MenuItem
+            {/* <MenuItem
               action={showLeaderboard}
               icon={FiAward}
               text={intl.formatMessage({ id: "Leaderboard" })}
-            ></MenuItem>
+            ></MenuItem> */}
 
             <MenuItem
               action={showSettings}
@@ -185,7 +185,7 @@ export const Menu = () => {
               justifyContent: "space-between",
             }}
           >
-            <Hint
+            {/* <Hint
               as={Link}
               href={`mailto:millagou.benjamin@gmail.com?subject=${intl.formatMessage(
                 { id: "A word about Amstangram" }
@@ -205,7 +205,7 @@ export const Menu = () => {
                 { id: "Version {code}" },
                 { code: "⭐.🍽.💣" }
               )}
-            </Hint>
+            </Hint> */}
           </View>
         </Dialog>
       )}

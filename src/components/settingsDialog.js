@@ -23,14 +23,14 @@ export const SettingsDialog = ({ deferred }) => {
     toggleShowBackgroundPattern,
   ] = useShowBackgroundPattern()
 
-  const { language, setLanguage } = useContext(LanguageContext)
+  // const { language, setLanguage } = useContext(LanguageContext)
   const intl = useIntl()
 
   const [themeKey, switchTheme] = useSwitchTheme()
 
-  const handleLanguageChange = (event) => {
-    setLanguage(event.target.value)
-  }
+  // const handleLanguageChange = (event) => {
+  //   setLanguage(event.target.value)
+  // }
 
   return (
     <Dialog
@@ -38,7 +38,7 @@ export const SettingsDialog = ({ deferred }) => {
       onClose={() => deferred.reject(DIALOG_CLOSED_REASON)}
       css={{ gap: 4 }}
     >
-      <View css={{ gap: 3 }}>
+      {/* <View css={{ gap: 3 }}>
         <View css={{ gap: 2 }}>
           <label>{intl.formatMessage({ id: "Language" })}</label>
           <Input as="select" onChange={handleLanguageChange} value={language}>
@@ -48,53 +48,53 @@ export const SettingsDialog = ({ deferred }) => {
               </option>
             ))}
           </Input>
-        </View>
-        <View css={{ gap: 2 }}>
-          <label>{intl.formatMessage({ id: "Difficulty" })}</label>
-          <Toggle
-            value={showBackgroundPattern}
-            onChange={toggleShowBackgroundPattern}
-            leftComponent={<Text>{intl.formatMessage({ id: "Easy" })}</Text>}
-            leftValue={true}
-            rightComponent={<Text>{intl.formatMessage({ id: "Hard" })}</Text>}
-            rightValue={false}
-          ></Toggle>
-        </View>
-        <View css={{ gap: 2 }}>
-          <label>{intl.formatMessage({ id: "Theme" })}</label>
-          <Toggle
-            value={themeKey}
-            onChange={switchTheme}
-            leftComponent={<View as={FiSun} css={{ size: "icon" }}></View>}
-            leftValue="light"
-            rightComponent={<View as={FiMoon} css={{ size: "icon" }}></View>}
-            rightValue="dark"
-          ></Toggle>
-        </View>
-        <View css={{ gap: 2 }}>
-          <label>{intl.formatMessage({ id: "Sounds" })}</label>
-          <Toggle
-            invertSounds
-            value={soundEnabled}
-            onChange={toggleSound}
-            leftComponent={<View as={FiVolumeX} css={{ size: "icon" }}></View>}
-            leftValue={false}
-            rightComponent={<View as={FiVolume2} css={{ size: "icon" }}></View>}
-            rightValue={true}
-          ></Toggle>
-        </View>
-        <View css={{ gap: 2 }}>
-          <label>{intl.formatMessage({ id: "Show tips" })}</label>
-          <Toggle
-            value={tipsEnabled}
-            onChange={toggleTips}
-            leftComponent={<Text>{intl.formatMessage({ id: "Yes" })}</Text>}
-            leftValue={true}
-            rightComponent={<Text>{intl.formatMessage({ id: "No" })}</Text>}
-            rightValue={false}
-          ></Toggle>
-        </View>
+        </View> */}
+      <View css={{ gap: 2 }}>
+        <label>{intl.formatMessage({ id: "Difficulty" })}</label>
+        <Toggle
+          value={showBackgroundPattern}
+          onChange={toggleShowBackgroundPattern}
+          leftComponent={<Text>{intl.formatMessage({ id: "Easy" })}</Text>}
+          leftValue={true}
+          rightComponent={<Text>{intl.formatMessage({ id: "Hard" })}</Text>}
+          rightValue={false}
+        ></Toggle>
       </View>
+      <View css={{ gap: 2 }}>
+        <label>{intl.formatMessage({ id: "Theme" })}</label>
+        <Toggle
+          value={themeKey}
+          onChange={switchTheme}
+          leftComponent={<View as={FiSun} css={{ size: "icon" }}></View>}
+          leftValue="light"
+          rightComponent={<View as={FiMoon} css={{ size: "icon" }}></View>}
+          rightValue="dark"
+        ></Toggle>
+      </View>
+      <View css={{ gap: 2 }}>
+        <label>{intl.formatMessage({ id: "Sounds" })}</label>
+        <Toggle
+          invertSounds
+          value={soundEnabled}
+          onChange={toggleSound}
+          leftComponent={<View as={FiVolumeX} css={{ size: "icon" }}></View>}
+          leftValue={false}
+          rightComponent={<View as={FiVolume2} css={{ size: "icon" }}></View>}
+          rightValue={true}
+        ></Toggle>
+      </View>
+      <View css={{ gap: 2 }}>
+        <label>{intl.formatMessage({ id: "Show tips" })}</label>
+        <Toggle
+          value={tipsEnabled}
+          onChange={toggleTips}
+          leftComponent={<Text>{intl.formatMessage({ id: "Yes" })}</Text>}
+          leftValue={true}
+          rightComponent={<Text>{intl.formatMessage({ id: "No" })}</Text>}
+          rightValue={false}
+        ></Toggle>
+      </View>
+      {/* </View> */}
       <SecondaryButton onClick={resetTips}>
         {intl.formatMessage({ id: "Reset tips" })}
       </SecondaryButton>
