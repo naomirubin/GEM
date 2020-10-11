@@ -176,6 +176,13 @@ export const Menu = () => {
               icon={FiSettings}
               text={intl.formatMessage({ id: "Settings" })}
             ></MenuItem>
+
+            <MenuItem
+              action={Link}
+              href="/index/"
+              icon={FiSave}
+              text={intl.formatMessage({ id: "Back to home" })}
+            ></MenuItem>
           </View>
 
           <View
