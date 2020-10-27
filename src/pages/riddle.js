@@ -10,6 +10,17 @@ const Riddle = () => (
     <h1 class>Riddle</h1>
     <p>Welcome to the riddle page</p>
     <Link to="/">Go back to the homepage</Link>
+    <div>
+      <input
+        type="text"
+        value={Riddle.value}
+        onChange={event => console.log("value changed!")}
+        />
+        <p></p>
+    </div>
+
+    
+    
   </Layout>
 )
 
