@@ -1,3 +1,11 @@
+
+/*******************************************************************************
+ *                                                                              *
+ * Authors   :  Naomi Rubin and Tess Lipsky                         			*
+ * Date      :  December 2020                                                   *
+ * We have embedded pre-existing code into our app for GEM. We have made        *
+ * modifications but give full credit to original authors.                	    *
+ *******************************************************************************/
 /*******************************************************************************
  *                                                                              *
  * Author    :  Angus Johnson                                                   *

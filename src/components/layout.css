@@ -597,28 +597,24 @@ pre tt:after {
 }
 
 .start-button {
-  width: 300px;
-  background: purple;
-  height: 150px;
-  margin: 20px;
-  margin-left: 30%;
+  width: 60%;
+  background: #884be1;
+  height: 120px;
+  margin-top: -60px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  position: center;
   color: white;
   font-size: 30px;
   border: none;
+  border-radius: 8px;
 }
 
 .button-link {
   color: white;
   text-decoration: none;
   font-family: Arial;
-}
-
-.about-gem {
-  width: 500px;
-  border: 15px solid purple;
-  padding: 30px;
-  padding-bottom: 250px;
-  margin-top: 20px;
+  font-weight: bold;
 }
 
 /* TANGRAMS */
