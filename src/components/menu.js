@@ -1,13 +1,6 @@
 import { useKeyframes } from "css-system"
 import React, { useContext, useEffect, useState } from "react"
-import {
-  FiAward,
-  FiGrid,
-  FiMenu,
-  FiSave,
-  FiSettings,
-  FiUser,
-} from "react-icons/fi"
+import { FiGrid, FiMenu, FiSave, FiSettings } from "react-icons/fi"
 import { useIntl } from "react-intl"
 import {
   DIALOG_CLOSED_REASON,
@@ -49,26 +42,12 @@ const MenuItem = ({ action, icon, text }) => {
 }
 
 export const Menu = () => {
-  // const { playlist, saveRequestId } = useContext(GalleryContext)
-  // const { currentUser } = useContext(UserContext)
   const { playButton } = useContext(SoundContext)
   const intl = useIntl()
 
-  const {
-    // showLeaderboard,
-    showGallery,
-    // showLogin,
-    // showProfile,
-    showSettings,
-  } = useContext(DialogContext)
+  const { showGallery, showSettings, showHome } = useContext(DialogContext)
 
   const [menuDialogDeferred, setMenuDialogDeferred] = useState()
-
-  // useEffect(() => {
-  //   menuDialogDeferred && menuDialogDeferred.reject(DIALOG_CLOSED_REASON)
-  // }, [playlist, saveRequestId])
-
-  // const { requestSave } = useContext(GalleryContext)
 
   const handleMenuClick = () => {
     playButton()
@@ -137,39 +116,11 @@ export const Menu = () => {
           css={{ gap: 3, overflow: "initial" }}
         >
           <View>
-            {/* {currentUser ? (
-              <MenuItem
-                action={() => showProfile(currentUser.uid)}
-                icon={() => (
-                  <Badge css={{ mx: -1 }} uid={currentUser.uid} size="badge" />
-                )}
-                text={intl.formatMessage({ id: "See my profile" })}
-              ></MenuItem>
-            ) : (
-              <MenuItem
-                action={showLogin}
-                icon={FiUser}
-                text={intl.formatMessage({ id: "Log in" })}
-              ></MenuItem>
-            )} */}
-
             <MenuItem
               action={showGallery}
               icon={FiGrid}
               text={intl.formatMessage({ id: "Tangram gallery" })}
             ></MenuItem>
-
-            {/* <MenuItem
-              action={requestSave}
-              icon={FiSave}
-              text={intl.formatMessage({ id: "Save tangram" })}
-            ></MenuItem> */}
-
-            {/* <MenuItem
-              action={showLeaderboard}
-              icon={FiAward}
-              text={intl.formatMessage({ id: "Leaderboard" })}
-            ></MenuItem> */}
 
             <MenuItem
               action={showSettings}
@@ -178,8 +129,8 @@ export const Menu = () => {
             ></MenuItem>
 
             <MenuItem
-              action={Link}
-              href="/index/"
+              action={showHome}
+              href="../"
               icon={FiSave}
               text={intl.formatMessage({ id: "Back to home" })}
             ></MenuItem>
@@ -191,29 +142,7 @@ export const Menu = () => {
               alignItems: "baseline",
               justifyContent: "space-between",
             }}
-          >
-            {/* <Hint
-              as={Link}
-              href={`mailto:millagou.benjamin@gmail.com?subject=${intl.formatMessage(
-                { id: "A word about Amstangram" }
-              )}`}
-              target="_blank"
-              rel="noopener, noreferrer"
-            >
-              {intl.formatMessage({ id: "Contact 💌" })}
-            </Hint>
-            <Hint
-              as={Link}
-              href="https://github.com/myagoo/amstangram"
-              target="_blank"
-              rel="noopener, noreferrer"
-            >
-              {intl.formatMessage(
-                { id: "Version {code}" },
-                { code: "⭐.🍽.💣" }
-              )}
-            </Hint> */}
-          </View>
+          ></View>
         </Dialog>
       )}
     </>

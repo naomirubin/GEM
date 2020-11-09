@@ -102,8 +102,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "Amstangram",
-        short_name: "Amstangram",
+        name: "GEMgrams",
+        short_name: "GEMgrams",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#1DD1A1",
