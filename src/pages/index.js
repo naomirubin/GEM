@@ -13,8 +13,8 @@ const IndexPage = () => (
       style={{
         size: "40%",
         marginTop: "-60px",
-        height: "80%",
-        width: "80%",
+        height: "100%",
+        width: "100%",
         marginLeft: "10%",
       }}
     ></img>
