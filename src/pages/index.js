@@ -11,11 +11,11 @@ const IndexPage = () => (
       src="maskable_icon.png"
       alt="GEM Logo"
       style={{
-        size: "40%",
+        size: "100%",
         marginTop: "-60px",
         height: "100%",
         width: "100%",
-        marginLeft: "10%",
+        marginLeft: "0%",
       }}
     ></img>
     <div
