@@ -8,11 +8,11 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <img
-      src="maskable_icon.png"
+      src="/src/images/maskable_icon.png"
       alt="GEM Logo"
       style={{
         size: "100%",
-        marginTop: "-60px",
+        marginTop: "0px",
         height: "100%",
         width: "100%",
         marginLeft: "0%",
