@@ -108,7 +108,7 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#1DD1A1",
         display: "standalone",
-        icon: "src/maskable_icon.png",
+        icon: "src/images/maskable_icon.png",
         icon_options: {
           purpose: "maskable",
         },

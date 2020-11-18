@@ -308,7 +308,7 @@ export const TipsProvider = ({ children }) => {
         id: "welcome",
         title: (
           <Title>
-            <FormattedMessage id="Welcome to Amstangram" values={iconValues} />
+            <FormattedMessage id="Welcome to GEMGrams" values={iconValues} />
           </Title>
         ),
         content: (
