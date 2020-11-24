@@ -18,7 +18,10 @@ export class Q3 extends Component {
       <Layout>
         <Container>
           {this.props.children}
-          <h4>What...?</h4>
+          <h4>
+            Seven consecutive positive integers have a sum of 91. What is the
+            largest of these integers?
+          </h4>
           <Container>
             <Row>
               <Col>
@@ -31,7 +34,7 @@ export class Q3 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 1
+                  9
                 </Button>
               </Col>
               <Col>
@@ -45,7 +48,7 @@ export class Q3 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 2
+                  22
                 </Button>
               </Col>
             </Row>
@@ -62,7 +65,7 @@ export class Q3 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 3
+                  16
                 </Button>
               </Col>
               <Col>
@@ -76,7 +79,7 @@ export class Q3 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 4
+                  24
                 </Button>
               </Col>
             </Row>

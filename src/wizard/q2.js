@@ -17,7 +17,7 @@ export class Q2 extends Component {
       <Layout>
         <Container>
           {this.props.children}
-          <h4>What is...?</h4>
+          <h4>Solve for x: 2(3x) = 162.</h4>
           <Container>
             <Row>
               <Col>
@@ -30,7 +30,7 @@ export class Q2 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 1
+                  3
                 </Button>
               </Col>
               <Col>
@@ -44,7 +44,7 @@ export class Q2 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 2
+                  4
                 </Button>
               </Col>
             </Row>
@@ -61,7 +61,7 @@ export class Q2 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 3
+                  5
                 </Button>
               </Col>
               <Col>
@@ -75,7 +75,7 @@ export class Q2 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 4
+                  8
                 </Button>
               </Col>
             </Row>

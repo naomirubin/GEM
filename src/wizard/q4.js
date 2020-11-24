@@ -17,7 +17,7 @@ export class Q4 extends Component {
       <Layout>
         <Container>
           {this.props.children}
-          <h4>If you..?</h4>
+          <h4>Evaluate (2/7) * (5/9) + (5/7) * (5/9). </h4>
           <Container>
             <Row>
               <Col>
@@ -30,7 +30,7 @@ export class Q4 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 1
+                  8/63
                 </Button>
               </Col>
               <Col>
@@ -44,7 +44,7 @@ export class Q4 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 2
+                  11/18
                 </Button>
               </Col>
             </Row>
@@ -61,7 +61,7 @@ export class Q4 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 3
+                  5/9
                 </Button>
               </Col>
               <Col>
@@ -75,7 +75,7 @@ export class Q4 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 4
+                  17/9
                 </Button>
               </Col>
             </Row>

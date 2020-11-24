@@ -17,7 +17,11 @@ export class Q1 extends Component {
       <Layout>
         <Container>
           {this.props.children}
-          <h4>How...?</h4>
+          <h4>
+            The length of a rectangular playing field is three times the width.
+            If the perimeter of the playing field is 96 m, what is the area of
+            the field in square meters?
+          </h4>
           <Container>
             <Row>
               <Col>
@@ -30,7 +34,7 @@ export class Q1 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 1
+                  432
                 </Button>
               </Col>
               <Col>
@@ -44,7 +48,7 @@ export class Q1 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 2
+                  450
                 </Button>
               </Col>
             </Row>
@@ -61,7 +65,7 @@ export class Q1 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 3
+                  464
                 </Button>
               </Col>
               <Col>
@@ -75,7 +79,7 @@ export class Q1 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 4
+                  504
                 </Button>
               </Col>
             </Row>

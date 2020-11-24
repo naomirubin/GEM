@@ -17,7 +17,10 @@ export class Q5 extends Component {
       <Layout>
         <Container>
           {this.props.children}
-          <h4>Are you...?</h4>
+          <h4>
+            In Trapezoid ABCD, AB = BC = 2AD and AD = 5 units. What is the area
+            of trapezoid ABCD?
+          </h4>
           <Container>
             <Row>
               <Col>
@@ -30,7 +33,7 @@ export class Q5 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 1
+                  68
                 </Button>
               </Col>
               <Col>
@@ -44,7 +47,7 @@ export class Q5 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 2
+                  75
                 </Button>
               </Col>
             </Row>
@@ -61,7 +64,7 @@ export class Q5 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 3
+                  81
                 </Button>
               </Col>
               <Col>
@@ -75,7 +78,7 @@ export class Q5 extends Component {
                   defaultValue={values.time}
                   onClick={this.continue}
                 >
-                  Answer 4
+                  109
                 </Button>
               </Col>
             </Row>
